@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35C24649-FD20-4454-AAAE-7CAC0DDFBC58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LabProject</RootNamespace>
+    <AssemblyName>LabProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="connect.cs" />
+    <Compile Include="Createuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Createuser.Designer.cs">
+      <DependentUpon>Createuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crystalqualification.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crystalqualification.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="departmenre.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>departmenre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="department.Designer.cs">
+      <DependentUpon>department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="departmentreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departmentreport.Designer.cs">
+      <DependentUpon>departmentreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="positionrep.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>positionrep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="positionreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="positionreport.Designer.cs">
+      <DependentUpon>positionreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qualification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qualification.Designer.cs">
+      <DependentUpon>qualification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="position.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="position.Designer.cs">
+      <DependentUpon>position.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qualificationreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qualificationreport.Designer.cs">
+      <DependentUpon>qualificationreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="restaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="restaff.Designer.cs">
+      <DependentUpon>restaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saraly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saraly.Designer.cs">
+      <DependentUpon>saraly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saralyre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saralyre.Designer.cs">
+      <DependentUpon>saralyre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saralyreport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>saralyreport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff.Designer.cs">
+      <DependentUpon>staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffreport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>staffreport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Createuser.resx">
+      <DependentUpon>Createuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystalqualification.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crystalqualification.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departmenre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>departmenre.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="department.resx">
+      <DependentUpon>department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departmentreport.resx">
+      <DependentUpon>departmentreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="positionrep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>positionrep.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="positionreport.resx">
+      <DependentUpon>positionreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qualification.resx">
+      <DependentUpon>qualification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="position.resx">
+      <DependentUpon>position.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="qualificationreport.resx">
+      <DependentUpon>qualificationreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="restaff.resx">
+      <DependentUpon>restaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saraly.resx">
+      <DependentUpon>saraly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saralyre.resx">
+      <DependentUpon>saralyre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saralyreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>saralyreport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff.resx">
+      <DependentUpon>staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>staffreport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
